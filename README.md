@@ -85,16 +85,16 @@ Upload Files via API**
 **
 Uses OpenAI's default static chunking:
 ```json
-{
-  "type": "static",
-  "static": {
-    "max_chunk_size_tokens": 600,
-    "chunk_overlap_tokens": 100
-  }
-}
+"chunking_strategy": {
+            "type": "static",
+            "static": {
+                "max_chunk_size_tokens": 500,
+                "chunk_overlap_tokens": 100
+            }
+        }
 ```
 Rationale:
-- max_chunk_size_tokens = 600: Each chunk contains up to 600 tokens (~450–500 words), providing sufficient context for accurate retrieval and response generation.
+- max_chunk_size_tokens = 500: Each chunk contains up to 500 tokens (~450–500 words), providing sufficient context for accurate retrieval and response generation.
 - chunk_overlap_tokens = 100: Ensures overlap between chunks to preserve semantic continuity across sections.
 This balance minimizes the number of chunks while retaining context, improving both performance and quality of responses during assistant retrieval.
 4. **Create Assistant**
