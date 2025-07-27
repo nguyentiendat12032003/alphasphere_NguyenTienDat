@@ -132,7 +132,8 @@ https://api.openai.com/v1/threads/{thread_id}/runs
 ```
 Poll for completion and fetch result
 
-##Docker
+## Docker
+
 #Build the Docker image
 ```bash
 docker build -t opti-openai .
