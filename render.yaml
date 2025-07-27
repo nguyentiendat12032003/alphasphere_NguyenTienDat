@@ -1,0 +1,12 @@
+services:
+  - type: cron
+    name: optisigns-daily-job
+    env: docker
+    schedule: "daily"  
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: OPENAI_API_KEY
+        value: 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
+      - key: VECTOR_STORE_ID
+        value: vs_68831cd566108191a23ef5c955d63d88
+ 
