@@ -131,6 +131,7 @@ Trigger a run (/v1/threads/{id}/runs)
 https://api.openai.com/v1/threads/{thread_id}/runs
 ```
 Poll for completion and fetch result
+
 ##🐳 Docker
 #Build the Docker image
 ```bash
