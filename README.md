@@ -132,7 +132,7 @@ https://api.openai.com/v1/threads/{thread_id}/runs
 ```
 Poll for completion and fetch result
 
-##🐳 Docker
+##Docker
 #Build the Docker image
 ```bash
 docker build -t opti-openai .
@@ -143,7 +143,7 @@ docker run --env-file .env opti-openai
 ```
 Make sure .env includes your OPENAI_API_KEY and VECTOR_STORE_ID.
 
-## 🚂 Railway (Daily Job Cron)
+## Railway (Daily Job Cron)
 #Link workspace
 ```
 https://railway.com/invite/Uuw9xct7Mrp
