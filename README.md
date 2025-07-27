@@ -113,7 +113,7 @@ You are OptiBot, the customer-support bot for OptiSigns.com.
 #5. Ask Questions via API
 <img width="1226" height="506" alt="Screenshot 2025-07-24 112621" src="https://github.com/user-attachments/assets/48262946-53a7-417c-a703-b85cbed2206b" />
 
-Use the ask_question.py script.
+Use the ask.py script.
 
 Steps:
 
