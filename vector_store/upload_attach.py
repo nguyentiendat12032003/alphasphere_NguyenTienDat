@@ -8,15 +8,14 @@ load_dotenv()
 API_KEY = os.getenv("OPENAI_API_KEY")
 VECTOR_STORE_ID = os.getenv("VECTOR_STORE_ID")
 
-HEADERS = {
-    "Authorization": f"Bearer {API_KEY}"
-}
+HEADERS = {"Authorization": f"Bearer {API_KEY}"}
 
 ARTICLES_DIR = "articles"
 UPLOAD_LOG = "upload_log.json"
 UPLOADED_FILES = []
 TOTAL_CHUNKS = 0
 
+# Split Markdown content into chunks (~500 tokens max), based on headings or length
 def chunk_markdown(content):
     chunks = []
     current_chunk = ""
@@ -31,20 +30,24 @@ def chunk_markdown(content):
         chunks.append(current_chunk.strip())
     return chunks
 
+# Compute SHA256 hash of a file to detect content changes
 def sha256_of_file(filepath):
     with open(filepath, "rb") as f:
         return hashlib.sha256(f.read()).hexdigest()
 
+# Load previous upload log to detect new or changed files
 def load_upload_log():
     if os.path.exists(UPLOAD_LOG):
         with open(UPLOAD_LOG, "r") as f:
             return json.load(f)
     return {}
 
+# Save upload log with file hash, chunk count, and file ID
 def save_upload_log(log):
     with open(UPLOAD_LOG, "w") as f:
         json.dump(log, f, indent=2)
 
+# Upload a file to OpenAI Files API with purpose="assistants"
 def upload_file(filepath):
     with open(filepath, "rb") as f:
         files = {"file": (os.path.basename(filepath), f)}
@@ -53,6 +56,7 @@ def upload_file(filepath):
         response.raise_for_status()
         return response.json()["id"]
 
+# Attach uploaded file to a specified vector store with static chunking
 def attach_file_to_vector_store(file_id):
     url = f"https://api.openai.com/v1/vector_stores/{VECTOR_STORE_ID}/files"
     payload = {
@@ -78,22 +82,27 @@ def attach_file_to_vector_store(file_id):
         print(response.text)
         return False
 
+# Main function: detects new/updated files, uploads them, and attaches to vector store
 def main():
     global TOTAL_CHUNKS
     upload_log = load_upload_log()
 
-    for filename in os.listdir(ARTICLES_DIR):
+    for filename in sorted(os.listdir(ARTICLES_DIR)):
         if not filename.endswith(".md"):
             continue
 
         filepath = os.path.join(ARTICLES_DIR, filename)
         file_hash = sha256_of_file(filepath)
 
-        if filename in upload_log and upload_log[filename]["sha256"] == file_hash:
-            print(f"Skipping {filename}: No changes detected.")
-            continue
+        status = "new"
+        if filename in upload_log:
+            if upload_log[filename]["sha256"] == file_hash:
+                print(f"⏭  Skipping {filename}: No changes.")
+                continue
+            else:
+                status = "updated"
 
-        print(f"\nUploading {filename}...")
+        print(f"\nUploading ({status.upper()}): {filename}")
         with open(filepath, "r", encoding="utf-8") as f:
             content = f.read()
 
@@ -110,12 +119,12 @@ def main():
                     "file_id": file_id,
                     "chunks": len(chunks)
                 }
-                print(f"→ Uploaded {filename} with {len(chunks)} chunks.")
+                print(f"→ {filename} uploaded with {len(chunks)} chunks.")
         except Exception as e:
             print(f"Failed to upload {filename}: {e}")
 
     save_upload_log(upload_log)
-    print(f"\nDone. Uploaded {len(UPLOADED_FILES)} new/changed files, {TOTAL_CHUNKS} total chunks.")
+    print(f"\nDone. Uploaded {len(UPLOADED_FILES)} files, {TOTAL_CHUNKS} total chunks.")
 
 if __name__ == "__main__":
     main()
