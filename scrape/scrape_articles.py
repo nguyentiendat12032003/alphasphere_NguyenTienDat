@@ -76,7 +76,7 @@ def run_scraper():
     latest_articles = sorted(all_articles, key=lambda x: x.get("updated_at", ""), reverse=True)[:10]
 
     for article in latest_articles:
-        save_article(article, directory="latest_articles")
+        save_article(article, directory="articles")
 
 if __name__ == "__main__":
     run_scraper()

@@ -1,0 +1,152 @@
+{
+  "accepted-payment-methods.md": {
+    "sha256": "af5722cf854a698f29898bab45e95f04c659b01122ab484cea6a87fde1864c96",
+    "file_id": "file-1JfoCmufDWVPiKVBn3pAK2",
+    "chunks": 2
+  },
+  "configuring-mass-deployment-with-jamf-pro-mdm-on-apple-devices.md": {
+    "sha256": "7bc0b3fc663a6debd36591507a0ea0c54fc7f54f39f63c252dc99e7ea38d35bd",
+    "file_id": "file-22K9V59Lag7nRUSiKN8r4b",
+    "chunks": 6
+  },
+  "designer-2-0-new-features.md": {
+    "sha256": "0a9199129975f3c8201a522056822766ad7f32a8b343f8c7a1cf1f2ab18dd819",
+    "file_id": "file-HfvEzeFV7d6YKHjRt7QJVz",
+    "chunks": 24
+  },
+  "disk-encryption.md": {
+    "sha256": "6d28513b4b216d38260ac72d10a7d80e42456b863ea18eced5f1d113fd1d7e0a",
+    "file_id": "file-V7v3th3tvsq4TepR8VsfrX",
+    "chunks": 6
+  },
+  "display-salesforce-dashboards-with-mfa-using-web-scripting.md": {
+    "sha256": "bdfca214d7e293a499fd6bf82db48e4c43aff84fc2a2d6735cda73fe2c0aefb7",
+    "file_id": "file-DJojxwJk4Aj9XR7ZQFhnBs",
+    "chunks": 4
+  },
+  "fixing-unexpected-screen-rotation-incorrect-orientation-with-optisigns-android-stick.md": {
+    "sha256": "bf017951ca0b446247188dd56b41f22275e2dc3e1f9889b0c9f4a79a29e15ef5",
+    "file_id": "file-7gmV2Hor9CbYPDtCJg4ktx",
+    "chunks": 1
+  },
+  "getting-started-with-an-optisigns-free-trial.md": {
+    "sha256": "aaf967c60f4aa2632240aed1b696c3eb2e058b519c48fd8f1f970456d3a47147",
+    "file_id": "file-MyTX5dbdXwxsC4M5DTpV8P",
+    "chunks": 8
+  },
+  "getting-started-with-designer.md": {
+    "sha256": "08fba5d6353a2256bb3b941d0575b64cf8510b3a7cc718a251530229fb7fca20",
+    "file_id": "file-1FugKhKwuKgqmbz4DW2jrR",
+    "chunks": 30
+  },
+  "getting-started-with-touch-screen-kiosks.md": {
+    "sha256": "7d204df71d48659d1a3cc708934ef154ebe904dbabe71050e82cdf6c28e275d0",
+    "file_id": "file-VRskgxqPPKNhabzTUs2tVq",
+    "chunks": 12
+  },
+  "handle-oauth-authentication-using-api-gateway-pre-request-configuration.md": {
+    "sha256": "3f1949b44f14346c1e2c05e993ab456ce6acfa52c8b78f1ba71fd8dbcc7e3664",
+    "file_id": "file-MnZHtag8AgaMxz3csn9RQn",
+    "chunks": 3
+  },
+  "how-to-access-the-troubleshooting-page-of-the-optisigns-player.md": {
+    "sha256": "f661f49dbc67b7b9fb513cde8f432396d424dae32655b0ddc2823ba9beb82deb",
+    "file_id": "file-CBeHEeHb46an2xvDsS3pgU",
+    "chunks": 3
+  },
+  "how-to-create-custom-news-feeds-with-optisync.md": {
+    "sha256": "7f9c5c2294397b55ab07f738eb3264d348229f083c6b8b886db8266708235b04",
+    "file_id": "file-Bu2BUG9r5kLoKjidN6T2mJ",
+    "chunks": 15
+  },
+  "how-to-display-dynamic-event-schedules-using-optisync.md": {
+    "sha256": "f710fbf2629a0780d44d7e8e6d7c33e96e424e81041ee7c48063e0dfb194e95e",
+    "file_id": "file-Hnf5P7SagDNmZK2LhRXz39",
+    "chunks": 17
+  },
+  "how-to-install-a-root-certificate-and-display-an-internal-website-on-screens.md": {
+    "sha256": "4713541209ecedf6a1caafd7d87f163ee0428c5df9710ff4eb90b9d4f77d5425",
+    "file_id": "file-HPoshSv4fg7x9k2kipWxZ9",
+    "chunks": 17
+  },
+  "how-to-order-a-preconfigured-optisigns-android-player-device.md": {
+    "sha256": "45dff9b0166bafc5c44dfdb4abf256bd53e99b9f4acb8f9bd3c8770ee9493986",
+    "file_id": "file-1PkHwNeNdDBXnHi5MDuvVK",
+    "chunks": 5
+  },
+  "how-to-play-licensed-background-music-on-digital-signs-with-optisound.md": {
+    "sha256": "df2bb3202321e9297f17b9c705ce4381903723434a2785b0bfac26eee36650a8",
+    "file_id": "file-4sLKD63s1xwsLwtCQPmC7F",
+    "chunks": 9
+  },
+  "how-to-set-up-a-powerbi-service-principal-for-use-in-optisigns.md": {
+    "sha256": "5f2858bdbf3786ed333f52566bd04637bd71daf5f2f8ca84f372198dd6660315",
+    "file_id": "file-BTNhKs2nXZXNDjatge6Cq8",
+    "chunks": 8
+  },
+  "how-to-use-optisigns-with-microsoft-teams-rooms.md": {
+    "sha256": "a9414e1e6752e1c1b8d894fb0d678848c969a5b7fea0a01b7deacc8e9da255e6",
+    "file_id": "file-WeVYEEn92GmZRmcogjCVSW",
+    "chunks": 7
+  },
+  "how-to-use-the-tableau-app.md": {
+    "sha256": "149f8204b4ea8d85052c1938c23e8ea5c0206bd64eb9fd511de46b7b59c20bc1",
+    "file_id": "file-9sWvbXs9H6Wbya5HUbavPf",
+    "chunks": 11
+  },
+  "how-to-use-toast-api-data-with-optisigns.md": {
+    "sha256": "695e158bb555b57d1c49d9509e706224a265da37df0643b71716e044c4e6e249",
+    "file_id": "file-1NNdiSUgnM7YiwhyuUsnZb",
+    "chunks": 7
+  },
+  "how-to-using-sepa-and-ideal-for-eur-currency-subscription-payments.md": {
+    "sha256": "db794ba58f59d39a4f3c6ecff6a01462359a9d99ca39cbb4d5adf4e7bc756f58",
+    "file_id": "file-3CY6AUWD7nEFGV5Ca5vnCN",
+    "chunks": 4
+  },
+  "integrating-point-of-sale-pos-systems-to-build-digital-menu-boards-with-optisync.md": {
+    "sha256": "4f28740b4471f5b211789c0b6d97378a149e80c0c587257a32501cc22a19f16b",
+    "file_id": "file-Jba81ES3bN3CyjQWdNQMbs",
+    "chunks": 16
+  },
+  "legacy-datasources.md": {
+    "sha256": "4306d9a34d9a8190679d6594aaa7d412c0fd1a194012eda14ae1677801ee9b89",
+    "file_id": "file-RebnLFdbrR2waiBkq3Eqcm",
+    "chunks": 7
+  },
+  "making-a-video-wall-with-optisigns-video-wall-app.md": {
+    "sha256": "a8cc29357cf4818342653e4afcad24914396cdf2c4846a3fdfd89fe1de237d8c",
+    "file_id": "file-Rs94hpxofMYNVY3CnSD89N",
+    "chunks": 18
+  },
+  "optisigns-android-player-troubleshooting-guide.md": {
+    "sha256": "61592b2c1e3215622074ed0a7196dad1f4b0a2bd7073f5aeca331cd4f82ada4e",
+    "file_id": "file-TiT4LstpoaFaFowa5hkAo6",
+    "chunks": 23
+  },
+  "optisigns-pro-player-advanced-features.md": {
+    "sha256": "f9b7a0ddf03464c00d9df8c6782772d012f33aab14e5ef41e4d0ed04f245b608",
+    "file_id": "file-Q4Fu1fx4jGLRyK7rgb6rMM",
+    "chunks": 11
+  },
+  "optisigns-pro-promax-player-troubleshooting-guide.md": {
+    "sha256": "052c8c6a33dbebaa3e6cfb7c3eda9cc2231b525880b232b0b77a433576dcbf6e",
+    "file_id": "file-46uuuvX5B3Tn7hB9rxdFjD",
+    "chunks": 17
+  },
+  "optisigns-promax-player.md": {
+    "sha256": "ded29a1083fee366e6cd055fed6bebe553ae55c50c33b63ae860a99bba759676",
+    "file_id": "file-VneCbAeDrTJBfVEV9MhWfF",
+    "chunks": 17
+  },
+  "tagging-in-optisigns.md": {
+    "sha256": "18de4d6d93dc3e0fa966e677d9dbfa0058c97f9adf4fca77124e1d3b8191ac28",
+    "file_id": "file-5fmMfkFw13Mc4sCTJfHYDG",
+    "chunks": 13
+  },
+  "what-do-i-get-with-an-optisigns-free-plan.md": {
+    "sha256": "4dc5b520d8216ef7d3adec1f3f858ba5a345002feecc728b96e401d35fa31737",
+    "file_id": "file-XLxjLBHXwpG21DMphauxhP",
+    "chunks": 8
+  }
+}
