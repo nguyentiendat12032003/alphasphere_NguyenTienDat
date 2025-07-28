@@ -16,6 +16,13 @@
 ├── .env.sample                
 └── README.md                  
 ```
+## Railway (Daily Job Cron)
+**Link workspace**
+```
+https://railway.com/invite/Uuw9xct7Mrp
+```
+**Log Tracking**
+<img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/bc8e024e-503b-4345-a2ea-4c9a243a641f" />
 ##  Setup & Installation
 **1. Clone this repository:**
 ```bash
@@ -142,11 +149,5 @@ docker run --env-file .env opti-openai
 ```
 Make sure .env includes your OPENAI_API_KEY and VECTOR_STORE_ID.
 
-## Railway (Daily Job Cron)
-**Link workspace**
-```
-https://railway.com/invite/Uuw9xct7Mrp
-```
-**Log Tracking**
-<img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/bc8e024e-503b-4345-a2ea-4c9a243a641f" />
+
 
