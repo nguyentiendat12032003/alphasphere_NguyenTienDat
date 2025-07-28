@@ -17,24 +17,24 @@
 └── README.md                  
 ```
 ##  Setup & Installation
-#1. Clone this repository:
-   ```bash
+**1. Clone this repository:**
+```bash
    git clone https://github.com/your-cryptic-repo-name.git
    cd your-cryptic-repo-name
    ```
 
-#2. Create `.env` file from template:
-   ```bash
+**2. Create `.env` file from template:**
+```bash
    cp .env.sample .env
    ```
 
-#3. Install dependencies:
-   ```bash
+**3. Install dependencies:**   
+```bash
    pip install -r requirements.txt
    ```
 
-#4. Run scripts locally (example):
-   ```bash
+**4. Run scripts locally (example):**
+```bash
    python upload_vectorstore.py
    python ask_question.py
    ```
@@ -70,10 +70,9 @@ Steps:
 ## Method 2 – Using Python & OpenAI API
 
 
-#1. Prepare Markdown Files
-
-#2. Place support documents (e.g. .md files) in the articles/ folder.
-Upload Files via API**
+**1. Prepare Markdown Files**
+**2. Place support documents (e.g. .md files) in the articles/ folder.**
+**Upload Files via API**
 **Use the upload_to_vectorstore.py script.**
 
 **Each file is uploaded via the https://api.openai.com/v1/files endpoint.**
@@ -81,7 +80,7 @@ Upload Files via API**
 **Files are then attached to a Vector Store via the https://api.openai.com/v1/vector_stores/{id}/files endpoint.**
 <img width="1211" height="895" alt="Screenshot 2025-07-24 112234" src="https://github.com/user-attachments/assets/6f9385c6-66b6-4580-b360-da4dabb69994" />
 
-#3. Chunking Configuration
+**3. Chunking Configuration**
 Uses OpenAI's default static chunking:
 ```json
 "chunking_strategy": {
@@ -92,7 +91,7 @@ Uses OpenAI's default static chunking:
             }
         }
 ```
-Rationale:
+**Rationale:**
 - max_chunk_size_tokens = 500: Each chunk contains up to 500 tokens (~450–500 words), providing sufficient context for accurate retrieval and response generation.
 - chunk_overlap_tokens = 100: Ensures overlap between chunks to preserve semantic continuity across sections.
 This balance minimizes the number of chunks while retaining context, improving both performance and quality of responses during assistant retrieval.
@@ -101,7 +100,6 @@ The created Assistant is configured with:
 ```bash
 https://api.openai.com/v1/assistants
 ```
-Vector Store ID
 System Prompt:
 ```
 You are OptiBot, the customer-support bot for OptiSigns.com.
@@ -110,14 +108,14 @@ You are OptiBot, the customer-support bot for OptiSigns.com.
 • Max 5 bullet points; else link to the doc.
 • Cite up to 3 "Article URL:" lines per reply.
 ```
-#5. Ask Questions via API
+**5. Ask Questions via API**
 <img width="1226" height="506" alt="Screenshot 2025-07-24 112621" src="https://github.com/user-attachments/assets/48262946-53a7-417c-a703-b85cbed2206b" />
 
 Use the ask.py script.
 
-Steps:
+**Steps:**
 
-- Create a thread (/v1/threads)
+Create a thread (/v1/threads)
 ```bash
 https://api.openai.com/v1/threads
 ```
@@ -131,22 +129,24 @@ Trigger a run (/v1/threads/{id}/runs)
 https://api.openai.com/v1/threads/{thread_id}/runs
 ```
 Poll for completion and fetch result
-##🐳 Docker
-#Build the Docker image
+
+## Docker
+
+**Build the Docker image**
 ```bash
 docker build -t opti-openai .
 ```
-#Run the container with environment variables
+**Run the container with environment variables**
 ```bash
 docker run --env-file .env opti-openai
 ```
 Make sure .env includes your OPENAI_API_KEY and VECTOR_STORE_ID.
 
-## 🚂 Railway (Daily Job Cron)
-#Link workspace
+## Railway (Daily Job Cron)
+**Link workspace**
 ```
 https://railway.com/invite/Uuw9xct7Mrp
 ```
-#Log Tracking
+**Log Tracking**
 <img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/bc8e024e-503b-4345-a2ea-4c9a243a641f" />
 
